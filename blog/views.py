@@ -29,7 +29,6 @@ class HomePageView(ListView):
 
 
 class PostDetailView(View):
-
     def get(self, request, *args, **kwargs):
         view = PostDisplay.as_view()
         return view(request, *args, **kwargs)

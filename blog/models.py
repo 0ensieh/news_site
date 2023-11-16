@@ -73,8 +73,6 @@ class Post(models.Model, HitCountMixin):
 
 class Comment(models.Model):
     post = models.ForeignKey('Post', on_delete=models.CASCADE, related_name='comments')
-    # if you don't define related name attribute,
-    # django will use 'name of model'_set (comment_set)
     name = models.CharField(max_length=100)
     email = models.EmailField()
     body = models.TextField()

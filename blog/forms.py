@@ -64,7 +64,7 @@ class ContactForm(forms.ModelForm):
                                            'placeholder': first_name}),
 
             'last_name': forms.TextInput(attrs=
-                                         {'class': 'form-control label-input100 wrap-input100 rs2-wrap-input100 '
+                                         {'class': 'form-control label-input100 wrap-input100 rs2-wrap-input100'
                                                    'validate-input',
                                           'placeholder': last_name}),
 
